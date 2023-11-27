@@ -1,5 +1,7 @@
 import React from "react";
 import Post from "../components/Post";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
             <a href="#">Profile</a>
           </li>
           <li>
-            <a href="/login">Login</a>
+            <Link href="/login">Login</Link>
           </li>
         </ul>
       </nav>
@@ -62,8 +64,10 @@ export default function Home() {
               </h1>
 
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="https://i.postimg.cc/m2XDRFMX/image.png"
+                  width={48}
+                  height={48}
                   alt=""
                   className="w-14 h-14"
                 />
@@ -74,9 +78,11 @@ export default function Home() {
               </div>
 
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="https://i.postimg.cc/SNNPCn5p/image.png"
                   alt=""
+                  width={48}
+                  height={48}
                   className="w-14 h-14"
                 />
                 <div>
@@ -86,8 +92,10 @@ export default function Home() {
               </div>
 
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="https://i.postimg.cc/fTNzNfJf/image.png"
+                  width={48}
+                  height={48}
                   alt=""
                   className="w-14 h-14"
                 />

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Login = () => {
@@ -35,12 +36,12 @@ const Login = () => {
             placeholder="Enter your Password..."
             className="border-none bg-primaryDark outline-none  krona rounded-md py-4 px-2 focus:ring-2 focus:ring-white ring-opacity-40"
           />
-          <a
+          <Link
             href="/"
             className="bg-transparent border border-white py-2  w-1/3 mx-auto krona text-center rounded-full hover:bg-white hover:text-primaryDark transition duration-300 ease-in-out"
           >
             Submit
-          </a>
+          </Link>
         </form>
       </div>
     </main>
